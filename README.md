@@ -6,10 +6,10 @@ This repo is intentionally small and focused: each prompt is designed to be copi
 
 ## Repository contents
 
-- `codebase-master-file-prompt.txt`
-- `multi-developer-codebase-documentation-prompt.txt`
+- `codebase-master-file-prompt.md`
+- `multi-developer-codebase-documentation-prompt.md`
 
-## Prompt 1: `codebase-master-file-prompt.txt`
+## Prompt 1: `codebase-master-file-prompt.md`
 
 ### What it does
 
@@ -37,7 +37,7 @@ Use this when you want a single, strong documentation baseline for a repository�
 
 This prompt is focused on creating a maintainable master analysis that becomes the source of truth for future agent work.
 
-## Prompt 2: `multi-developer-codebase-documentation-prompt.txt`
+## Prompt 2: `multi-developer-codebase-documentation-prompt.md`
 
 ### What it does
 
@@ -85,8 +85,8 @@ Use this when:
 
 The two prompts solve slightly different problems:
 
-- `codebase-master-file-prompt.txt` is the simpler, more direct “analyze repo and produce AGENTS.md + MASTER.md” workflow.
-- `multi-developer-codebase-documentation-prompt.txt` is the stronger operational system for scale, concurrency, and team collaboration.
+- `codebase-master-file-prompt.md` is the simpler, more direct “analyze repo and produce AGENTS.md + MASTER.md” workflow.
+- `multi-developer-codebase-documentation-prompt.md` is the stronger operational system for scale, concurrency, and team collaboration.
 
 If you are documenting a single repository for a solo developer or a first-pass audit, start with the first prompt.
 
@@ -98,8 +98,8 @@ Paste the contents of one of the prompt files into a coding agent and provide th
 
 Example:
 
-- “Analyze this repo at `<CODEBASE_ROOT>` and apply the instructions in `codebase-master-file-prompt.txt`.”
-- “Use the multi-developer workflow in `multi-developer-codebase-documentation-prompt.txt` for this repo.”
+- “Analyze this repo at `<CODEBASE_ROOT>` and apply the instructions in `codebase-master-file-prompt.md`.”
+- “Use the multi-developer workflow in `multi-developer-codebase-documentation-prompt.md` for this repo.”
 
 The prompts are designed to be reusable, not repo-specific. They work by guiding the agent to inspect the actual source and generate documentation from evidence instead of assumptions.
 
